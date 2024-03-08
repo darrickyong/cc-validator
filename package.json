@@ -1,0 +1,18 @@
+{
+  "name": "cc-validator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "server": "yarn --cwd backend dev",
+    "client": "yarn --cwd frontend dev",
+    "installall": "yarn && yarn --cwd backend install && yarn --cwd frontend install",
+    "test": "yarn --cwd backend test && yarn --cwd frontend test"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+  }
+}
